@@ -41,10 +41,7 @@ app.use((req, res, next) => {
 
 //for ping
 app.get("/", async (req, res) => {
-  res.json({
-    status: "success",
-    message: "HNG 13 Backend Stage 0 Task 1 is LIVE!!!",
-  });
+  res.send("HNG 13 Backend Stage 0 Task 1 is LIVE!!!");
 });
 
 app.get("/me", async (req, res) => {
